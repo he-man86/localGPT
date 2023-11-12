@@ -88,8 +88,8 @@ EMBEDDING_MODEL_NAME = "hkunlp/instructor-large"  # Uses 1.5 GB of VRAM (High Ac
 ####    32b        130 GB       65 GB       32.5 GB - 35 GB    16.25 GB - 19 GB
 ####    65b        260.8 GB     130.4 GB    65.2 GB - 67 GB    32.6 GB -  - 35 GB
 
-# MODEL_ID = "TheBloke/Llama-2-7B-Chat-GGML"
-# MODEL_BASENAME = "llama-2-7b-chat.ggmlv3.q4_0.bin"
+MODEL_ID = "TheBloke/Llama-2-7B-Chat-GGML"
+MODEL_BASENAME = "llama-2-7b-chat.ggmlv3.q4_0.bin"
 
 ####
 #### (FOR GGUF MODELS)
@@ -98,8 +98,8 @@ EMBEDDING_MODEL_NAME = "hkunlp/instructor-large"  # Uses 1.5 GB of VRAM (High Ac
 # MODEL_ID = "TheBloke/Llama-2-13b-Chat-GGUF"
 # MODEL_BASENAME = "llama-2-13b-chat.Q4_K_M.gguf"
 
-MODEL_ID = "TheBloke/Llama-2-7b-Chat-GGUF"
-MODEL_BASENAME = "llama-2-7b-chat.Q4_K_M.gguf"
+# MODEL_ID = "TheBloke/Llama-2-7b-Chat-GGUF"
+# MODEL_BASENAME = "llama-2-7b-chat.Q4_K_M.gguf"
 
 # MODEL_ID = "TheBloke/Mistral-7B-Instruct-v0.1-GGUF"
 # MODEL_BASENAME = "mistral-7b-instruct-v0.1.Q8_0.gguf"
@@ -128,8 +128,8 @@ MODEL_BASENAME = "llama-2-7b-chat.Q4_K_M.gguf"
 ##### 48GB VRAM Graphics Cards (RTX 6000, RTX A6000 and other 48GB VRAM GPUs) #####
 
 ### 65b GPTQ LLM Models for 48GB GPUs (*** With best embedding model: hkunlp/instructor-xl ***)
-# MODEL_ID = "TheBloke/guanaco-65B-GPTQ"
-# MODEL_BASENAME = "model.safetensors"
+MODEL_ID = "TheBloke/guanaco-65B-GPTQ"
+MODEL_BASENAME = "model.safetensors"
 # MODEL_ID = "TheBloke/Airoboros-65B-GPT4-2.0-GPTQ"
 # MODEL_BASENAME = "model.safetensors"
 # MODEL_ID = "TheBloke/gpt4-alpaca-lora_mlp-65B-GPTQ"

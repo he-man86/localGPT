@@ -57,10 +57,13 @@ def load_model(device_type, model_id, model_basename=None, LOGGING=logging):
     """
     logging.info(f"Loading Model: {model_id}, on: {device_type}")
     logging.info("This action can take a few minutes!")
-
+    print(device_type)
+    print(model_id)
+    print(model_basename)
     if model_basename is not None:
         if ".gguf" in model_basename.lower():
             llm = load_quantized_model_gguf_ggml(model_id, model_basename, device_type, LOGGING)
+            print(llm)
             return llm
         elif ".ggml" in model_basename.lower():
             model, tokenizer = load_quantized_model_gguf_ggml(model_id, model_basename, device_type, LOGGING)
@@ -242,7 +245,9 @@ def main(device_type, show_sources, use_history, model_type, save_qa):
     # check if models directory do not exist, create a new one and store models here.
     if not os.path.exists(MODELS_PATH):
         os.mkdir(MODELS_PATH)
-
+    print(device_type)
+    print(use_history)
+    print(model_type)
     qa = retrieval_qa_pipline(device_type, use_history, promptTemplate_type=model_type)
     # Interactive questions and answers
     while True:
